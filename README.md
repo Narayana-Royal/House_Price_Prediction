@@ -1,4 +1,4 @@
-# Black Friday Sales : EDA 1
+# House Price Prediction using ML
 
 ## Exploratory Data Analysis on various Datasets
 
