@@ -26,11 +26,11 @@
 
 > Changing categorical values of columns to numericals using various techniques
 
-> Filling the missing values of each columns using different methods
+> In location feature changing the categorical values which are repeated less to "Other".
 
-> Visualising the cleaned data to extract insights/Observations
+> Removing the outliers in bhk and bath features.
 
-> Finalled scaled the cleaned data as training and test in order to build the model for prediction
+> Built LR model to predict the house price.
 
 
 
@@ -41,22 +41,28 @@
 
 **4. Explanation along with the Code**:
 
-> Importing the necessary libraries to perform dataset operations which are numpy,pandas,matplotlib,seaborn
+*Data import and cleaning(by dropping features and null values)*
+> Importing the necessary libraries to perform dataset operations which are pandas,matplotlib,seaborn
 
-> Reading the data of both train.csv and test.csv files using PANDAS READ method
+> Reading the data using PANDAS READ method.
 
-> checking the general information of data by using methods called INFO(),DESCRIBE()
+> Dropping the unnecessary columns("availability","area_type","society","balcony") by DROP method.
 
-> Dropping the unnecessary column by DROP method
+> Checked the null value counts and dropped these because they are less in number.
 
-> Changing categorical values of each column to numerical by MAPping function
+*Feature Engineering*
+> Changed categorical "size" feature to numerical by split method.
 
-> Filling the missing values by using MODE statistical operation(which is efficient one !)
+> In feature "total_sqft" we separate values which are in range (for example: 2100-2500) with normal floating values.
 
-> Changing all column datatypes to int using ASTYPE() method
+> Taking average in "total_sqft" feature where the feature values which are in certain range.
 
-> Visualising the cleaned data by using seaborn library and plotting the graphs (i.e BARPLOT) and extracting the insight (as in our dataset
-  it shows PRODUCT_CATEGORY1 has high number of purchases. This can be seen by using graphs)
+> Grouping the feature "location" with freq. count of each value in location feature in order to reduce the dimensionality of this feature.
+
+> Changing the feature "location" values of count less than 10 to "Other"
+
+*Detecting the Outliers & Removing it*
+> Based on Domain Knowledge, removing the type of house 
   
 > Scaling the features into train and test. Approach used here is that the rows(null values of target column)  are splitted into test data.
 
