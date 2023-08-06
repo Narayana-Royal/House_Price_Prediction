@@ -1,6 +1,6 @@
 # House Price Prediction using ML
 
-## Exploratory Data Analysis on various Datasets
+## End to End ML Project
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
 > As city is growing larger,There's need for predicting the prices of different types of houses in order for a people to take the lease. So it is needed to predict the price based on considerable features.This can be acheived by ML model. 
 
 **2. DATASET**: 
-> https://www.kaggle.com/datasets/sdolezel/black-friday?select=test.csv (Downloaded the zip file which has both train and test data files separately)
+> https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data 
 
 > Features: UserID, Product_ID, Gender Age, Occupation, City_Category, Stay_In_Current_City_Years, Marital_Status, Product_Category_1, Product_Category_2,    Product_Category_3, Purchase
 
