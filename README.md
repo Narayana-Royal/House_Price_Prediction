@@ -16,11 +16,11 @@
 **2. DATASET**: 
 > https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data 
 
-> Features: UserID, Product_ID, Gender Age, Occupation, City_Category, Stay_In_Current_City_Years, Marital_Status, Product_Category_1, Product_Category_2,    Product_Category_3, Purchase
+> Features: area_type,availability,location,size,society,total_sqft,bath,balcony,price
 
 **3. APPROACH USED to solve the Problem**: 
 
-* *As our problem statement shows that we have to do the data cleaning and feature engineering for this dataset.The following steps are done to achieve this.* 
+* *As our problem statement shows that we have to build a model that predicts the house price. The following steps are done to achieve this.* 
 
 > Cleaning of data is done by dropping unnecessary columns
 
