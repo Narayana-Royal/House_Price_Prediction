@@ -62,11 +62,11 @@
 > Changing the feature "location" values of count less than 10 to "Other"
 
 *Detecting the Outliers & Removing it*
-> Based on Domain Knowledge, removing the type of house 
+> Based on Domain Knowledge, removing the type of house which doesn't match with sqft value. For example, consider 1bhk there should be min of 300sqft. So removing the records where there is a value less than 300sqft. similarly we apply this for all types of houses.
   
-> Scaling the features into train and test. Approach used here is that the rows(null values of target column)  are splitted into test data.
+> Removing the outliers of feature "Price" using normal distribution.(taking mean and std and considering only values greater than mean-std and less than mean+std).
 
-> Now it is ready to train the model after using TRAIN_TEST_SPLIT function from sklearn
+> Also there is price flaw for 2bhk and 3bhk. In general, the price of 3bhk should be higher than 2bhk. But there are few records of price for 3bhk is less than 2bhk and vice versa. This can be viewed 
 
 
 
