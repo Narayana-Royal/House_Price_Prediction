@@ -86,6 +86,15 @@
 
 > Now that I saved this LR model using pickle and also X.columns which have all column features using json.
 
+*Building Website and Server*
+
+> As in our approach, the user gives gata of sqft and other parameters like numer of bhk,number of bath,location.
+
+> To get the user input I build a simple website using html css and javascript which helps to connect to the server.
+
+> This data is uploaded to the server and server is connected to the backend where our saved models are present which will return price of the house.
+
+> server.py has the code for server which connects the util.py (where the saved models are present) and app.html and app.cs (this has code for website).And app.js will post the user input to the server.py and and gets the price results from server.py
 
 
 
