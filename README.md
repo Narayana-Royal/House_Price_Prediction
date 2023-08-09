@@ -66,7 +66,9 @@
   
 > Removing the outliers of feature "Price" using normal distribution.(taking mean and std and considering only values greater than mean-std and less than mean+std).
 
-> Also there is price flaw for 2bhk and 3bhk. In general, the price of 3bhk should be higher than 2bhk. But there are few records of price for 3bhk is less than 2bhk and vice versa. This can be viewed 
+> Also there is price flaw for 2bhk and 3bhk. In general, the price of 3bhk should be higher than 2bhk. But there are few records of price for 3bhk is less than 2bhk and vice versa. This can be viewed with a scatter plot of specific location and taking the parameters as total sqft and price.
+
+> The logic used to remove these outliers is that taking the mean of all 2bhk price values and checking whether the 3bhk price is less or greater to that. If we got any value lesser than mean of 2bhk, then we create separate list and drop these values in the main DataFrame. 
 
 
 
