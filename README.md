@@ -66,9 +66,25 @@
   
 > Removing the outliers of feature "Price" using normal distribution.(taking mean and std and considering only values greater than mean-std and less than mean+std).
 
-> Also there is price flaw for 2bhk and 3bhk. In general, the price of 3bhk should be higher than 2bhk. But there are few records of price for 3bhk is less than 2bhk and vice versa. This can be viewed with a scatter plot of specific location and taking the parameters as total sqft and price.
+> Also there is price flaw for 2bhk and 3bhk. In general, the price of 3bhk should be higher than 2bhk. But there are few records of price for 3bhk less than 2bhk. This can be viewed with a scatter plot of specific location and taking the parameters as total sqft and price.
 
-> The logic used to remove these outliers is that taking the mean of all 2bhk price values and checking whether the 3bhk price is less or greater to that. If we got any value lesser than mean of 2bhk, then we create separate list and drop these values in the main DataFrame. 
+> The logic used to remove these outliers is that taking the mean of all 2bhk price values and checking whether the 3bhk price is less or greater to that. If we got any value lesser than mean of 2bhk, then we create separate list and drop these values in the main DataFrame.
+
+> Removing outliers in "bhk" and "bath" features. There are values where more number of bathrooms than bhk which is unreal. So I kept a parameter stating that count of bath should be < bhk +2. If it exceeds then I removed these outliers.
+
+*Changing categorical to numerical*
+> Using get_dummies method I have changed the "location" feature categorical values to numerical. This method will convert the categories into numerical by creating separate columns.
+
+> Now I have the final DataFrame with all numerical values and now this is ready for the next step.
+
+*Model Building and Predictions*
+> X and y values are splitted using the final dataframe. where X has all features except the target price feature and y has only price feature.
+
+> As the target price feature is numerical data. I took the basic Linear Regression model and fitted the X_train and y_train values to it. and checked the score using testing data. It really performed well.
+
+> Also used GridSearchCV in order to consider multiple algorithms and also tuned the parameters in each.and got the scores for each algorithm with best parameters for that algorithm. Even Here LinearRegression performed better.
+
+> Now that I saved this LR model using pickle and also X.columns which have all column features using json.
 
 
 
