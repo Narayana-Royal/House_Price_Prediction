@@ -11,7 +11,7 @@
 5. Results with Screenshots
 
 **1. PROBLEM STATEMENT**: 
-> As city is growing larger,There's need for predicting the prices of different types of houses in order for a people to take the lease. So it is needed to predict the price based on considerable features.This can be acheived by ML model. 
+> As city is growing larger, There's need for predicting the prices of different types of houses in order for a people to take the lease. Prediction of the prices based on considerable features are very basic necessity to the people. Create a solution where you can able to predict the prices of houses. 
 
 **2. DATASET**: 
 > https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data 
