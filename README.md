@@ -90,7 +90,7 @@
 
 > As in our approach, the user gives gata of sqft and other parameters like numer of bhk,number of bath,location.
 
-> To get the user input I build a simple website using html css and javascript which helps to connect to the server.
+> To get the user input I have built a simple website using html css and javascript which helps to connect to the server.
 
 > This data is uploaded to the server and server is connected to the backend where our saved models are present which will return price of the house.
 
